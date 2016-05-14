@@ -11,8 +11,8 @@ sudo chown -R root:www /var/www
 sudo chmod 2775 /var/www
 find /var/www -type d -exec sudo chmod 2775 {} \;
 sudo yum -y install git
-sudo echo extension=pdo.so >> /etc/php.ini
-cat <<EOT >> /etc/httpd/conf/httpd.conf
+command | sudo echo extension=pdo.so >> /etc/php.ini
+command | cat <<EOT >> /etc/httpd/conf/httpd.conf
 <Directory "/var/www/html/">
     Options FollowSymLinks
     AllowOverride All
