@@ -1,7 +1,7 @@
 # /bin/sh
-sudo yum install php56 --skip-broken
-sudo yum install php56-mbstring
-sudo yum install php56-intl
+sudo yum -y install php56 --skip-broken
+sudo yum -y install php56-mbstring
+sudo yum -y install php56-intl
 sudo yum -y install mysql55-server php56-mysqlnd
 sudo service httpd start
 sudo chkconfig httpd on
